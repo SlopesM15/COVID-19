@@ -6,21 +6,7 @@
        <ion-icon name="fitness-outline"></ion-icon>
       </ion-title>
     </ion-toolbar>
-    <script>
-        var x = document.getElementById("demo");
-        function getLocation() {
-          if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-          } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-          }
-        }
-        
-        function showPosition(position) {
-          x.innerHTML = "Latitude: " + position.coords.latitude +
-          "<br>Longitude: " + position.coords.longitude;
-        }
-        </script>
+    
   </ion-header>
   
   <ion-content [fullscreen]="true">
@@ -74,7 +60,7 @@
           <ion-col class="ion-text-center">
               <label>Confirmed</label>
             <div class="ion-text-center">
-                <ion-chip>4546 </ion-chip>
+                <ion-chip>4546</ion-chip>
             </div>
           </ion-col>
           <ion-col class="ion-text-center">
@@ -119,4 +105,6 @@
     </ion-card>
 
     </div>
+
+    
   </ion-content>
